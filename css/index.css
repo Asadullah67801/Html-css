@@ -102,10 +102,10 @@ padding-right: 70px;
     }
     
 }
-@media(min-width:300px){
+@media(min-width:200px){
     .grid-container{
         flex-direction: column;
-        padding: 0 30px;
+        padding: 0 50px;
     }
 }
 
