@@ -7,7 +7,11 @@
     margin-right: 100.23px;
     gap:22.5px;
 }
+.hero-section{
+    background-color: gainsboro;
+}
 nav{
+    padding: 2% 2%;
 
 
     width:100%;
@@ -17,6 +21,9 @@ nav{
     text-align: center;
 }
 
+.man-image{
+    height:auto;
+}
 .left-content{
     flex-basis:60%;
 padding-left: 80px;
@@ -24,20 +31,50 @@ padding-left: 80px;
 .right-content{
     padding-right: 80px;
 }
+h1{
+    line-height: 1.4;
+}
+.container p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 .navlinks ul li{
     
 
-
+color:#4CAF4F;
+cursor:pointer;
+transition:0.2s;
+font-family: sans-serif;
 
     display:inline-block;
     margin:16px;
 }
+nav button{
+    background-color:#4CAF4F;
+    color:white;
+    padding: 12px 34px;
+    border:none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.navlinks  ul li:after{
+    content:'';
+    left:0;
+    width:0%;
+transition:0.4s;
+    background-color:#4CAF4F;
+    display: block;
 
+}
+.navlinks ul li:hover:after{
+    width:100%;
+}
 @media(max-width:700px){
     .container{
         font-size: 20px;
         flex-direction: column;
         padding:0 20px;
+
     }
     .navlinks{
         display: none;
